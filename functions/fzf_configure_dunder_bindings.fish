@@ -12,6 +12,7 @@ function fzf_configure_dunder_bindings --description "Configure fzf functions pr
         bind \eC '__fzf_cd --hidden'
         bind \eo __fzf_open
         bind \eg __fzf_rg
+        bind \eG __fzf_rga
 
         if ! test "$fish_key_bindings" = fish_default_key_bindings
             bind -M insert \ec __fzf_cd
