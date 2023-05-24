@@ -11,3 +11,4 @@ Default keymaps are:
 - `Alt + Shift + c` - cd into sub-directories, including hidden ones
 - `Alt + o` - open a file/dir using xdg-open or open command
 - `Alt + g` - live ripgrep and open file
+- `Alt + Shift + g` - live ripgrep-all
