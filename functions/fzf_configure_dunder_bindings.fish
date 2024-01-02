@@ -8,14 +8,14 @@ function fzf_configure_dunder_bindings --description "Configure fzf functions pr
     set -q FZF_PREVIEW_DIR_CMD; or set -U FZF_PREVIEW_DIR_CMD ls
 
     if test "$FZF_DISABLE_KEYBINDINGS" -ne 1
-        bind \ec __fzf_cd
+        # bind \ec __fzf_cd
         bind \eC '__fzf_cd --hidden'
-        bind \eo '__fzf_open -p'
+        bind \eo __fzf_open
         bind \eg __fzf_rg
         bind \eG __fzf_rga
 
         if ! test "$fish_key_bindings" = fish_default_key_bindings
-            bind -M insert \ec __fzf_cd
+            # bind -M insert \ec __fzf_cd
             bind -M insert \eC '__fzf_cd --hidden'
             bind -M insert \eo __fzf_open
             bind -M insert \eg __fzf_rg

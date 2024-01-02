@@ -16,15 +16,12 @@ function __fzf_open -d "Open files and directories."
         function argparse
             functions -e argparse # deletes itself
         end
-        if contains -- --editor $argv; or contains -- -e $argv
-            set _flag_editor "yes"
-        end
         if contains -- --preview $argv; or contains -- -p $argv
             set _flag_preview "yes"
         end
     end
 
-    set -l options "e/editor" "p/preview=?"
+    set -l options "p/preview=?"
     argparse $options -- $argv
 
     set -l preview_cmd
