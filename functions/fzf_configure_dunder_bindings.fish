@@ -10,7 +10,7 @@ function fzf_configure_dunder_bindings --description "Configure fzf functions pr
     if test "$FZF_DISABLE_KEYBINDINGS" -ne 1
         # bind \ec __fzf_cd
         bind \eC '__fzf_cd --hidden'
-        bind \eo __fzf_open
+        # bind \eo __fzf_open
         bind \eg __fzf_rg
         bind \eG __fzf_rga
 
